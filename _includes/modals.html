@@ -1,0 +1,85 @@
+<!-- Portfolio Modals -->
+{% for project in site.projects %}
+<div class="portfolio-modal modal fade" id="portfolioModal-{{ project.id }}" tabindex="-1" role="dialog"
+  aria-hidden="true">
+  <div class="modal-content">
+    <div id="close-{{ project.id }}" class="close-modal" data-dismiss="modal">
+
+      <script>
+        $("#close-{{ project.id }}").on("click", function(){
+          RemoveGameiFrame("{{project.id}}");
+        })
+        
+        $(window).on("keydown", function(e) {
+          EscapePressed(e, "{{project.id}}", $("#close-{{ project.id }}"));
+        })
+      </script>
+      
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+
+            {% assign project_name = project.name | slugify %}
+            {% assign project_found = false %}
+
+            {% for post in site.posts %}
+
+              {% assign post_name = post.name | remove: '.markddown' | slugify %}
+              
+              {% if project_name == post_name %}
+                {{ post.content }}
+                {% assign project_found = true %}
+              {% endif %}
+            
+            {% endfor %}
+            
+            {% if project_found != true %}
+              {% if project.subprojects %}
+                {% include subproject-content.html %}
+              {% else %}
+                {% include project-content.html %}
+              {% endif %}
+            {% endif %}
+
+            <br>
+            <br>
+            <button id="button-{{project.id}}" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+              Close</button>
+
+            <script type="text/javascript">
+              $("#button-{{project.id}}").on('click', function() {
+                RemoveGameiFrame("{{project.id}}");
+              });
+            </script>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+<style>
+  li {
+    list-style-type: none;
+  }
+  
+  ul {
+    padding: 0;
+  }
+
+  iframe {
+    border: 0px #000000 none;
+    display: block;
+    margin: 0 auto;
+    height: 420px;
+    width: 100%;
+  }
+</style>

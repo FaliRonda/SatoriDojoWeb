@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+
+:root {
+	--colorprincipal: #e41729;
+	--colortexto: #000000;
+	--coloracento: #bda17c;
+	--colorclaro: #f6f6f6;
+	--coloroscuro: #222222;
+	--angulo: 60px;
+}
+
+
+
+
+/************************************ ESTILOS ESTRUCTURALES ************************************************/
+* {margin: 0; padding: 0; border: 0; outline: 0; list-style: none; text-decoration: none; box-sizing: border-box;}
+
+html, body, form, input, textarea {font-family: 'Poppins', sans-serif; font-size: medium; color: var(--colortexto); scroll-behavior: smooth;}
+html {background: url("images/fondo.svg") repeat-y center center; background-size: 120% auto; overflow-x: hidden;}
+body {overflow-x: hidden;}
+nav, a, a img, input, textarea {transition: .2s;}
+
+body::-webkit-scrollbar {width: 16px; background: black;}
+body::-webkit-scrollbar-thumb {background: var(--colorprincipal); border-radius: 0; border: 0;}
+body::-webkit-scrollbar-thumb:hover {background: var(--colorprincipal);}
+
+.contenedor {position: relative;}
+
+
+
+
+/****************************** NAV ******************************/
+nav {position: absolute; top: 0; left: 0; width: 100%; z-index: 10; padding: 15px 30px; font-size: large; display: flex; justify-content: center; align-items: center; line-height: 50px;}
+nav a {display: inline-block; padding: 0 1em; color: white; font-weight: bold;}
+
+.instagram {position: fixed; top: 50%; right: -10px; z-index: 200; transform: translateY(-50%);}
+.instagram:hover {right: 0;}
+.instagram img {display: block; padding-right: 10px; border-radius: 5px 0 0 5px; background: black;}
+
+
+
+
+/****************************** HEADER ******************************/
+
+header {height: calc(100vh + var(--angulo)); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative;}
+header {clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - var(--angulo)), 0% 100%);}
+header video {position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-fit: cover; filter: brightness(.8) hue-rotate(-10deg);}
+header img {max-width: 90%;}
+
+
+
+
+/****************************** SECTIONS ******************************/
+section {margin: 100px 0;}
+
+.columnas {display: flex; flex-wrap: wrap; justify-content: center; max-width: 1400px; margin: 0 auto;}
+.centrado_horizontal {display: flex; justify-content: center; align-items: center;}
+.centrado_vertical {display: flex; flex-direction: column; justify-content: center; align-items: flex-start; overflow-x: hidden;}
+.centrado_total {display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;}
+.unidas, .unidas .columna {width: inherit; padding: 0; margin: 0;}
+.invertidas {flex-direction: row-reverse;}
+.columna {flex: 1 1 auto; padding: 0 15px 30px; position: relative;}
+.columna_20 {flex: 0 0 20%;}
+.columna_25 {flex: 0 0 25%;}
+.columna_33 {flex: 0 0 33.3333%;}
+.columna_50 {flex: 0 0 50%;}
+.columna_66 {flex: 0 0 66.6666%;}
+.columna_75 {flex: 0 0 75%;}
+
+h1 {font-size: 3.0rem; line-height: 1.3em; margin: 50px 0; color: white; max-width: 14em;}
+h2 {font-size: 4.5rem; line-height: 1.0em; margin: 0 0 30px; color: var(--colorprincipal);}
+h3 {font-size: 1.5rem; line-height: 1.2em; margin: 0 0 15px; color: var(--colorprincipal);}
+h4 {font-size: 1.5rem; line-height: 1.2em; margin: 0 0 15px; color: var(--colorprincipal);}
+hr {display: block; width: 80px; border-top: 4px solid var(--colorprincipal); margin: 30px auto;}
+p {margin-bottom: 30px; line-height: 1.5em;}
+ul {margin-bottom: 30px; border-top: 1px solid;}
+ul li {display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid;}
+img {max-width: 100%; vertical-align: middle;}
+a {color: var(--colorprincipal);}
+p a {font-weight: bold;}
+video {filter: hue-rotate(-10deg);}
+
+.presentacion {text-align: center;}
+.presentacion p {font-size: 1.33rem;}
+.circulo {display: block; width: 100%; height: auto; object-fit: cover; border-radius: 100%; margin: 0 auto; position: relative;}
+.ico {width: 120px; margin: 45px auto 15px;}
+.box {padding: 50px;}
+
+.detalle {position: absolute; top: 0; left: 6%; z-index: 100; display: block; content: ""; width: 26%; height: auto;}
+.invertidas .detalle {left: inherit; right: 6%;}
+
+.profesores {text-align: center;}
+.profesores img {width: 90%; max-width: 250px; height: auto; margin: 0 auto 30px; will-change: transform; transition: .1s ease-out;}
+.profesores img:hover {transform: scale(1.1);}
+
+.zoom {border-radius: 100%; transition: .2s;}
+.zoom:hover {transform: scale(1.1); box-shadow: 10px 10px black;}
+
+
+
+
+/****************************** SECCIONES ******************************/
+#gracias {background-image: url("images/cabecera.jpg"); text-align: center;}
+
+
+
+/****************************** FORM ******************************/
+.contacto {padding: 50px 0 20px; clip-path: polygon(0% calc(0% + var(--angulo)), 100% 0%, 100% 100%, 0% calc(100% - var(--angulo))); color: white; background: url("/images/contacto.jpg") no-repeat center center var(--colorprincipal); background-size: cover;}
+.contacto h2 {color: white;}
+.contacto .boton {color: var(--colorprincipal); background: white;}
+
+form {color: white;}
+label {display: block; margin-bottom: 6px;}
+textarea {width: 100%; height: 8em; margin-bottom: 30px; resize: none;}
+input, textarea, select {display: inline-block; max-width: 100%; padding: .6em .8em; font-style: italic; border-radius: 5px; margin-bottom: 5px; color: var(--colortexto); background: no-repeat center center var(--colorclaro); background-size: contain;}
+small {display: block; margin: 15px 0; font-size: small; line-height: 1.2em;}
+input:focus {background-color: white;}
+input[type=checkbox] {display: inline-block; width: 36px; height: 36px; appearance: none; margin-right: .5em; vertical-align: middle; cursor: pointer;}
+input[type=checkbox]:checked {background-image: url("images/check.svg");}
+
+.boton {font-size: 1.1em; font-weight: bold; letter-spacing: .12em; text-transform: uppercase; will-change: transform;}
+.boton {display: inline-block; color: white; background: var(--colorprincipal); padding: .6em 1.5em; margin: 5px; border: 0; border-radius: 999px; transition: .2s;}
+.boton:hover {background: dodgervar(--colorprincipal); border-color: dodgervar(--colorprincipal); cursor: pointer; transform: skewX(-15deg) scale(1.25); box-shadow: 10px 10px black;}
+.boton.grande {font-size: 1.5em;}
+
+
+
+
+/****************************** FOOTER ******************************/
+footer {max-width: 1400px; padding: 60px 0 30px; margin: -100px auto 0;}
+footer strong {display: block; padding-bottom: 1em; margin-bottom: .5em; border-bottom: 2px solid;}
+footer a {font-weight: bold;}
+footer img {display: block; margin: 0 auto;}
+
+
+
+
+/****************************** GRACIAS ******************************/
+.gracias {display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; text-align: center;}
+
+
+
+
+/****************************** MEDIA QUERIES ******************************/
+@media all and (max-width: 1200px) {
+	.columna_20 {flex: 0 0 33.3333%;}
+}
+@media all and (max-width: 992px) {
+	:root {--angulo: 30px;}
+	nav {display: none;}
+	h1 {font-size: 2rem;}
+	h2 {font-size: 3rem;}
+	h3 {font-size: 1rem; margin-bottom: 5px;}
+	.box {padding: 50px 5%;}
+	.detalle {left: 11%;}
+	.presentacion p {font-size: 1rem; text-align: left;}
+	.profesores {font-size: small; line-height: 1.25em;}
+	.columna {flex: 0 0 100%; width: 100%;}
+	.columna_20 {flex: 0 0 50%;}
+	.circulo {max-width: 90%;}
+	.detalle {left: 11%;}
+	.invertidas .detalle {left: inherit; right: 11%;}
+	.instagram {width: 30px;}
+	.boton.grande {font-size: 1.2em;}
+	form {margin-top: -120px;}
+	footer img {margin: 0 0 0 auto;}
+}

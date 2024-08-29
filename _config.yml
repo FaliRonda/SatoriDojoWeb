@@ -1,0 +1,421 @@
+# Site settings
+title: Fali Ronda
+email: rafael.ronda.garcia@gmail.com
+url: https://falironda.com
+description: "Executive Producer."
+keywords: "producer, game producer, videogames producer, game production, game development, videogames production, videogames development"
+skills: "Web Developer - Graphic Artist - User Experience Designer"
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 9d8dbf #80B3FF
+  primary-dark: 8f68e3
+  primary-rgb: "209, 198, 233" #"128,179,255"
+  secondary: 4c4161 #FD6E8A
+  secondary-dark: 403752 #A2122F
+
+# Footer settings
+footer:
+  copyright: Dr. Henry Jekyll
+  location: Location
+  social: Around the Web
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: google
+    url: mailto:rafael.ronda.garcia@gmail.com
+  - title: linkedin
+    url: https://www.linkedin.com/in/falironda/
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+
+# Credits content
+credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ""
+
+projects:
+  - name: Abyssium
+    id: 14
+    mainImage:
+      url: "tinyquest/abyssium.jpg"
+      alt: "Abyssium art"
+    jobs: "Technical & Creative Producer and IndieDev"
+    subprojects:
+      - name: project assets
+        size: "-"
+        videoUrl: '<iframe width="1903" height="742" src="https://www.youtube.com/embed/Ki5DB6ZaFMk" title="Abyssium MVP trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+        resourcesLinks:
+          - url: "https://docs.google.com/presentation/d/1BmuxWom0lE4TIlt_1z9j1bYIi__hP6Ar_dR4A6_rmtU/"
+            text: Pitch deck
+          - url: "https://www.notion.so/falironda/Abyssium-combat-prototype-4d5139c6ab494879adf9b9b1e449ac23"
+            text: Combat prototype
+          - url: "https://www.notion.so/falironda/Abyssium-exploration-prototype-WIP-f467de95f53246b3b5b192319245d3ff"
+            text: Exploration prototype
+          - url: "https://www.notion.so/falironda/Tiny-Quest-Studio-2aac92aba1804cd1a483d92dcb1dcafd"
+            text: Project management tool & GDD (Notion)
+      - name: Creative Direction
+        size: "-"
+        responsibilities:
+          - Shaping design pillars, core mechanics, and lore based on the initial idea
+          - Creating high-level design documentation during both the conceptualization and the pre-production phases
+          - Coordinating team members to ensure alignment and shared understanding
+      - name: Production
+        size: "-"
+        responsibilities:
+          - "Developing project documentation: roadmap and budget"
+          - Conducting market analysis and sales forecasts
+          - Team building from scratch
+          - Creating and maintaining the product backlog
+          - Implementing and adapting Scrum methodology to project specifications with Notion
+      - name: Game Pitching
+        size: "-"
+        responsibilities:
+          - Crafting pitches based on initial idea
+          - Building a database of target publishers and investors
+          - Attending Gamescom & BIG events, managing schedules with publishers
+          - Pitching to publishers (events & video calls)
+          - "Demo trailer creation: script, visual and graphic assets, and editing"
+          - "Following up and negotiating with publishers for project signing: agreeing on deliverable milestones, start dates, etc."
+      - name: GameDev
+        size: "-"
+        responsibilities:
+          - Designing architecture and technical solutions
+          - "Implementing all core features of the MVP: 3Cs (character, camera, controls), main systems and mechanics, AIs, design tools..."
+          - "Game Design: levels, tweaking, game loop, documentation, features analysis, pipelines, etc."
+  - name: Campero Games
+    id: 13
+    mainImage:
+      url: "campero/main.jpg"
+      alt: "Campero Games logo"
+    jobs: "Studio Producer"
+    size: "-"
+    responsibilities:
+      - "Administration support"
+      - "Team manager"
+      - "Roles, responsibilities and communication hierarchy definition"
+      - "Milestones roadmap elaboration"
+      - "Production processes design and implementation (adapted Scrumban, tasking, bugs handling...)"
+      - "Communication processes design and implementation"
+      - "Coordination with publishers"
+    summary: "Find the studio website at the next link:"
+    resourcesLink: "https://www.camperogames.com/"
+    resourcesText: "Campero Games website"
+  - name: Pixelatto
+    id: 12
+    mainImage:
+      url: "pixelatto/main.png"
+      alt: "Pixelatto logo"
+    jobs: "Studio Producer"
+    responsibilities:
+      - "Studio management"
+      - "Business administration (taxes, HR…)"
+      - "Prepare and review legal documentation"
+      - "Processing of grants and subsidies"
+      - "Office manager"
+      - "Housing investment"
+      - "Negotiating and closing deals"
+      - "Team building (improving communication and quality of life)"
+      - "Recruitment"
+      - "Team manager (vacations, interns, revisions…)"
+    subprojects:
+      - name: Orbtale
+        size: "-"
+        videoUrl: '<iframe width="1280" height="720" src="https://www.youtube.com/embed/uu5suVnXRic" title="Reventure: Orbtale Kickstarter Trailer (Official)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        responsibilities:
+          - "Kickstarter campaign design support"
+          - "Backers management (backerkit)"
+          - "Game design support"
+          - "Art support"
+          - "Outsourcing/freelances management"
+          - "Networking with editorials and partners at tabletop events"
+          - "Marketing operations with stakeholders"
+          - "Game translation management"
+          - "Game production and distribution"
+        summary: "Find the Kickstarter campaign at the next link:"
+        resourcesLinks:
+          - url: "https://www.kickstarter.com/projects/javicepa/reventure-orbtale"
+            text: "Orbtale KS campaign"
+      - name: Tabletop Creator
+        size: "-"
+        videoUrl: '<iframe width="1280" height="720" src="https://www.youtube.com/embed/CK0ZA9Cp0xA" title="Tabletop Creator Trailer (Official)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        responsibilities:
+          - "Outsourcing/freelances management"
+          - "Trailer design and creation"
+          - "Product development"
+          - "Community support"
+          - "Discounts management"
+        summary: "Find the product page at the next link:"
+        resourcesLinks:
+          - url: "https://store.steampowered.com/app/861590/Tabletop_Creator"
+            text: "Tabletop Creator Steam page"
+      - name: Website
+        size: "-"
+        responsibilities:
+          - "www.pixelatto.com development (front, e-commerce, deployment, SEO, analytics…)"
+          - "Blog posts redaction"
+          - "Outsourcing/freelances management (UI/UX, tech support)"
+        resourcesLinks:
+          - url: "https://www.pixelatto.com/"
+            text: "Link to the website"
+      - name: Reventure
+        size: "-"
+        videoUrl: '<iframe width="1128" height="635" src="https://www.youtube.com/embed/aY7EVPVZk2g" title="Reventure - Release Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        responsibilities:
+          - "Events presentations and awards reception"
+          - "Tech task development (Unity, C#)"
+          - "ASO"
+          - "Discounts management"
+        summary: "Find the game page at the next link:"
+        resourcesLinks:
+          - url: "https://store.steampowered.com/app/900270/Reventure/"
+            text: "Reventure Steam page"
+      - name: Card Creator
+        size: "-"
+        videoUrl: '<iframe width="1280" height="720" src="https://www.youtube.com/embed/liMw3yfeTdo" title="Card Creator 2.0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        responsibilities:
+          - "Community management and support"
+          - "Bug fixing and distribution (Steam)"
+          - "Discounts management"
+        summary: "Find the product page at the next link:"
+        resourcesLinks:
+          - url: "https://store.steampowered.com/app/523600/Card_Creator/"
+            text: "Card Creator Steam page"
+  - name: Ghost Racing
+    mainImage:
+        url: "ghostracing/main.jpg"
+        alt: "Ghost Racing Project"
+    videoUrl: '<iframe width="1280" height="720" src="https://www.youtube.com/embed/RC9j2-QavLs" title="Ghost Racing: Formula E Android Gameplay [1080p/60fps]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    jobs: "Producer"
+    size: "-"
+    information: "Developed in Virtually Live"
+    responsibilities:
+      - "Product Backlog responsible"
+      - "Processes development based on Agile methodologies (Scrum, Kanban)"
+      - "Project tracking and reporting"
+      - "International coordination with a studio based in Singapore (up to 15 people)"
+      - "Release processes handling (mobile stores)"
+      - "LiveOps management"
+      - "Mid-low level planning using Hansoft / Notion"
+      - "High level planning using MS Project (Gantt, resources assignment…)"
+      - "Communication problems solver"
+      - "Team recruitment and management (up to +30 people)"
+      - "QA management"
+      - "Features game design"
+      - "Internal products / tools design"
+  - name: Kira
+    id: 1
+    mainImage: 
+        url: "kira/main.png"
+        alt: "Kira project image"
+    images:
+      - url: "kira/image1.png"
+        alt: "Kira project image"
+    jobs: "Game Designer, producer, writter, programmer and artist"
+    responsibilities:
+      - "Creative direction: definition of high concept, user experience, USPs, target, etc"
+      - "Mechanics design"
+      - "Level design"
+      - "UI flow design"
+      - "Mockups elaboration"
+      - "Characters conceptualization"
+      - "Narrative and writing"
+      - "Prioritization of features"
+      - "Control of project progress"
+    size: 'Developed by 2 people in 3 months'
+    information: 'UMA Master on Design and Development of Videogames, TFM, 2018'
+    summary:
+      - "Kira is a mobile game we developed in three months as our TFM project. Since we had no artists, I designed this project to look like a mobile app."
+      - "You can download the APK with the following link,"
+    resourcesLink: "https://drive.google.com/open?id=1egPz1bP4E0XnHLa7es8rk0ExmJJWd4Jw"
+    resourcesText: "Download link"
+  - name: 'Chicken-O-Saurus Royale'
+    id: 2
+    mainImage:
+      url: "chicken_o_saurus/main.png"
+      alt: "Chicken o Saurus project"
+    gameUrl: "chicken_o_saurus/index.html"
+    jobs: 'Game Designer, programmer and audio'
+    size: 'Developed by 4 people in 2 days'
+    information: 'Málaga Jam VIII, Summer 2018'
+    responsibilities:
+      - 'Creative direction process'
+      - 'Mechanics design'
+      - 'Music and sound assets elaboration'
+      - 'Coding support'
+      - 'Control of project progress'
+    summary:
+      - 'This game was made between @alvarolupil, @CrisGarciaJ, @AndGarciaz and me during a Málaga Game Jam.'
+      - 'In this project I directed the creative process of the game and created and integrated the music and audio in the code.'
+      - 'I also was in charge of ensuring we were meeting the deadlines of the jam. '
+  - name: 'Cooking mecha'
+    id: 3
+    mainImage:
+      url: 'cooking_mecha/main.png'
+      alt: "Coocking Mecha project"
+    gameUrl: 'cooking_mecha/index.html'
+    jobs: 'Game Designer and composer'
+    size: 'Developed by 4 people in 2 days'
+    information: 'Ludum Dare 41, Spring 2018'
+    summary: 'This game was developed during a Ludum Dare game jam, along with my master team. This time I wanted to deal with the audio production for the game, so I composed the song that accompanies it and also worked on the sounds.'
+  - name: 'Reflections'
+    id: 4
+    mainImage:
+      url: 'reflections/main.jpg'
+      alt: "Relection project"
+    gameUrl: 'reflections/index.html'
+    jobs: 'Game Designer and writter'
+    size: 'Developed by 4 people in 2 days'
+    information: 'Global Game Jam, MálagaJam VII, Spring 2018'
+    responsibilities:
+      - 'Creative direction process'
+      - 'Game flow and ends design'
+      - 'Narrative and writing'
+      - 'Control of project progress'
+    summary:
+      - 'The jam’s theme was "Transmission", we wanted to get out of our comfort zone and do something different.'
+      - 'Reflections is an intimate game that seeks to send a message to the player, which affects all of us in many aspects of life, in relation to the decisions we take based on our fears and our emotional nature as humans..'
+      - 'In addition to directing the creative process and the team, I designed and wrote the game script and supported the programming.'
+  - name: 'Bucketneers'
+    id: 5
+    mainImage:
+      url: 'bucketneers/main.png'
+      alt: "Bucketneers project"
+    gameUrl: 'bucketneers/index.html'
+    jobs: 'Game Designer, producer and programmer'
+    size: 'Developed by 4 people in 2 days'
+    information: "Ludum Dare 40, Winter 2017"
+    responsibilities:
+      - 'Creative direction process'
+      - 'Gameplay design'
+      - 'Technical design'
+      - 'Coding'
+      - 'Control of project progress'
+    summary:
+      - 'Ludum Dare 40 took place during the time I was studying the Master of Design and Development of Videogames, with the theme "The more you have, the worse".'
+      - "I built a team, which would become my initial TFM team, and I requested a space in the Polo Digital of Málaga for the students being able to participate together in one physical place.."
+      - 'During the jam, I directed the team in order to align them to close a project on time, and also the creative process. I supported the programming as well.'
+      - 'We finally got the 98th position at an international level.'
+    codeLink: 'https://github.com/RafaelRonda/Bucketneers'
+    
+#  - name: 'BeDo Rhythm'
+#    id: 6
+#    mainImage:
+#      url: 'bedo/main.png'
+#      alt: "BeDo Rhythm project"
+#    images:
+#      - url: "bedo/image1.jpg"
+#        alt: "BeDo image 1"
+#      - url: "bedo/image2.jpg"
+#        alt: "BeDo image 2"
+#    jobs: 'Game Designer'
+#    size: "-"
+#    information: 'UMA Master on Design and Development of Videogames, Design module project, Winter 2017'
+#    summary: 'Project developed after 4 months learning design in the UMA Master. Please, check the GDD (in spanish) in '
+#    resourcesLink: 'https://trello.com/b/9YpqqKjN/gdd-bedo-rhythm-the-mute-curse'
+#    resourcesText: 'this Trello board.'
+# //   id: 7,
+#  //   name: 'Wizard\'s Castle ',
+#//   imgUrl: imgBaseUrl + 'wizards_castle/main.jpg',
+#  //   images: [
+#//     imgBaseUrl + "wizards_castle/main.jpg"
+#//   ],
+#//   jobs: 'Game Designer and producer',
+#//   size: 'Developed by 3 people in 3 day',
+#//   information: 'Board Game, UMA Master on Design and Development of Videogames, Autumn 2017',
+#//   responsibilities: [
+#//     'Game conceptualization',
+#//     'Mechanics design'
+#//   ],
+#//   descriptionLines: [
+#//     'During my time at the Master in design and development of video games @JaviCepa (founder of MálagaJam and @Pixelatto) proposed an exercise based on designing a board game for as many players as members of the team.',
+#//     'I teamed up with @FranHelix_ and @EvilAndrades and since we were three we chose a triangular board shape and set it in a ruined castle, where two players will play two warriors who will have to cooperate to defeat the third player, who will be the dark lord of the castle.',
+#//     'We proposed other restrictions in order to simplify its production, such as specifying the completion date of each of the parts of its creation or limiting the number of elements that could contain the game.',
+#//     'You can download the PDF files of the game at the link below.']
+#//     ,
+#//   resourcesLink: 'https://trello.com/b/ANDEWzPP/master-juego-de-mesa-funnel',
+#//   resourcesText: 'Trello board'
+#// },
+#// {
+#//   id: 8,
+#//   name: 'OMG What can I do',
+#//   imgUrl: imgBaseUrl + 'omg/main.png',
+#//   gameUrl: gameBaseUrl + 'omg/index.html',
+#//   jobs: 'Programador',
+#//   information: 'Pequeño juego para el master de videojuegos de la uma, otoño 2017',
+#//   description: 'A lo largo del módulo de Diseño del máster, tuvimos también unos talleres básicos de ' +
+#//   'Unity para ir entrando en calor, donde nos proporcionaban código, assets, etc, para después pedirnos ' +
+#//   'David Báez (A Bonfire of souls) montar un pequeño proyecto propio con ese material. Como ya en mi tiempo ' +
+#//   'libre me había dedicado a aprender acerca de Unity y había hecho algunas cosillas, ' +
+#//   'preferí hacer un pequeño proyecto muy simple para cubrir el ejercicio, dedicándole unas 4 horas ya que en ' +
+#//   'ese momento no tenía mucho más tiempo, algún día lo mimaré más ;).',
+#//   codeLink: 'https://github.com/RafaelRonda/OMG-What-can-I-do'
+#// },
+#/
+#id: 9,
+#name: 'Midnight Water Glass',
+#imgUrl: imgBaseUrl + 'glass/main.png',
+#gameUrl: gameBaseUrl + 'glass/index.html',
+#jobs: 'Game Designer, programmer, artist and composer',
+#information: 'Master on Design and Development of videogames, Practice, Autum 2017',
+#description: 'This Flat Game corresponds to a job ordered by @AlbertoRico. The aim was to guide the design of the game to convey a concrete experience. We only had one hour to develop our own graphics and we were only allowed to implement basic movement in code.'
+#},
+#{
+#id: 10,
+#name: 'Shinkai',
+#imgUrl: imgBaseUrl + 'shinkai/main.png',
+#gameUrl: gameBaseUrl + 'shinkai/index.html',
+##jobs: 'Game Designer and programmer',
+#information: 'Málaga Jam VI, Summer 2017',
+#description: 'As the second LittleQuest project and being the first GameJam of the team, we developed this game where we chose to stand out for art and sound, which was our strong point. Up to this point we suffered some internal conflicts in the team, but we managed to solve them and we were recognized for it. To play, use the arrow keys to move Bara (the main fish) and the space key to catch the small fish and throw them to the big ones, since they want to attack your treasure.',
+#codeLink: 'https://github.com/RafaelRonda/Shinkai'
+#},
+  - name: 'Master of Tappers'
+    id: 11
+    mainImage:
+      url: 'mot/main.png'
+      alt: "Master of Tappers project"
+    gameUrl: 'mot/index.html'
+    size: 'Developed by 7 people in 3 months'
+    jobs: 'Game Designer, producer, programmer and animator'
+    information: 'Littlequest project, Spring 2017'
+    responsibilities:
+      - 'Mechanics design'
+      - 'Coding'
+      - 'Product management'
+      - 'Team lead'
+    summary:
+      - "After a professional burnout, one day I decided to start making video games to redirect my professional life. I got home after work and I setted up a development group with 6 friends and started a studio project: LittleQuest."
+      - "I started studying through books and lectures, explaining to my team how to work through a pragmatic Scrum workflow. Three months of work later, we ended with this alpha version of Master of Tappers, meeting our planning."
+      - "Then I realized that the scope of the project was too ambitious, so I proposed to let it back and start developing smaller projects, in order to learn more iteratively."
+      - "To play you have to press the color buttons in the corners, following the order that appears in the upper central box, to defeat the enemies before the time is up!"

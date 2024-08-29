@@ -1,0 +1,32 @@
+<!-- Portfolio Grid Section -->
+<section id="portfolio">
+  <div class="container portfolio-flex-grid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Projects</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="portfolio-flex-row">
+      {% for project in site.projects %}
+      <div class="portfolio-flex-item portfolio-item">
+        <a id="link-{{ project.id }}" href="#portfolioModal-{{ project.id }}" class="portfolio-link" data-toggle="modal">
+
+          <script>
+            $("#link-{{ project.id }}").on("click", function(){
+              CreateGameiFrame("{{ project.id }}", "{{ project.gameUrl }}");
+            })
+          </script>
+          
+          <div class="caption">
+            <div class="caption-content">
+              <h3>{{ project.name }}</h3>
+            </div>
+          </div>
+          <img src="assets/images/{{ project.mainImage.url }}" class="img-responsive" style="min-width: -webkit-fill-available;" alt="{{ project.mainImage.alt }}">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
