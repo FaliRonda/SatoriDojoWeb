@@ -164,6 +164,8 @@ footer img {display: block; margin: 0 auto;}
 	.detalle {left: 11%;}
 	.invertidas .detalle {left: inherit; right: 11%;}
 	.instagram {width: 30px;}
+	.whatsapp {width: 30px;}
+	.whatsapp {position: fixed; top: 52%; right: -10px; z-index: 200; transform: translateY(-62%);}
 	.boton.grande {font-size: 1.2em;}
 	form {margin-top: -120px;}
 	footer img {margin: 0 0 0 auto;}
